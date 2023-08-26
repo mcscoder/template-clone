@@ -1,0 +1,333 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --dark-opacity-bg: rgba(0, 0, 0, 0.7);
+  --gold-clr: rgb(204, 153, 102);
+  --yellow-clr: rgb(255, 204, 102);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fixed-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.global-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav .nav-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .nav-container .nav-item-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--dark-opacity-bg);
+  padding-bottom: 0.5rem;
+}
+
+nav .nav-container .nav-item-container.show {
+  display: flex;
+}
+
+nav .nav-container .nav-item-container .nav-item-link a {
+  display: flex;
+  padding: 0.75rem 1rem;
+}
+
+nav .nav-container .nav-item-container .nav-item-link a span {
+  padding: 5px 7px;
+  font-size: 1.5rem;
+  color: var(--gold-clr);
+}
+
+nav .nav-container .nav-item-container .nav-item-link.active a span {
+  border-bottom: 3px solid var(--gold-clr);
+  margin-bottom: -3px;
+}
+
+nav .nav-container .nav-toggle-btn {
+  display: flex;
+  font-size: 2rem;
+  padding: 0.75rem;
+  z-index: 99;
+}
+
+.intro-container {
+  background-image: url("./assets/imgs/antique-cafe-bg-01.jpg");
+}
+
+.intro-container .global-content-container {
+  margin-inline: auto;
+  padding: 5rem 0.5rem;
+  max-width: 436px;
+}
+
+.intro-container .global-content-container .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-container .global-content-container .content-container .container-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: center;
+  background-color: var(--dark-opacity-bg);
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.intro-container .global-content-container .content-container .container-1 h1 {
+  color: #fff;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-container .global-content-container .content-container .container-1 p {
+  color: var(--gold-clr);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.intro-container .global-content-container .content-container .container-2 {
+  display: flex;
+  padding: 2.5rem;
+  text-align: center;
+  background-color: var(--dark-opacity-bg);
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.intro-container .global-content-container .content-container .container-2 p {
+  color: #fff;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.intro-container .global-content-container .content-container .container-2 p a {
+  color: #ff6;
+  transition: color 150ms ease-in-out;
+}
+
+.intro-container
+  .global-content-container
+  .content-container
+  .container-2
+  p
+  a:hover {
+  color: #9ff;
+}
+
+.intro-container .global-content-container .content-container .container-3 {
+  display: flex;
+  background-color: var(--dark-opacity-bg);
+  border-radius: 0.5rem;
+}
+
+.intro-container .global-content-container .content-container .container-3 a {
+  padding: 1.5rem 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  transition: color 150ms ease-in-out;
+}
+
+.intro-container
+  .global-content-container
+  .content-container
+  .container-3
+  a
+  span {
+  margin-left: 0.5rem;
+}
+
+.intro-container
+  .global-content-container
+  .content-container
+  .container-3
+  a:hover {
+  color: var(--gold-clr);
+}
+
+.menu-container {
+  background-image: url("./assets/imgs/antique-cafe-bg-02.jpg");
+}
+
+.menu-container .global-content-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-container .global-content-container .content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 0;
+}
+
+.menu-container .global-content-container .content-container .container-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.menu-container .global-content-container .content-container .container-1 h2 {
+  color: #544639;
+  font-size: 2.5rem;
+  font-weight: 400;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem 3rem;
+}
+
+.menu-container .global-content-container .content-container .container-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-container
+  .global-content-container
+  .content-container
+  .container-2
+  .menu-items-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #544639;
+  padding: 1.5rem 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.menu-container
+  .global-content-container
+  .content-container
+  .container-2
+  .menu-items-container
+  .menu-item {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.menu-container
+  .global-content-container
+  .content-container
+  .container-2
+  .menu-items-container
+  .menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.menu-container
+  .global-content-container
+  .content-container
+  .container-2
+  .menu-items-container
+  .menu-item
+  img {
+  border-radius: 0.5rem;
+}
+
+.menu-container
+  .global-content-container
+  .content-container
+  .container-2
+  .menu-items-container
+  .menu-item
+  .item-descriptions {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  padding: 0.125rem 0;
+  flex: 1;
+}
+
+.menu-container
+  .global-content-container
+  .content-container
+  .container-2
+  .menu-items-container
+  .menu-item
+  .item-descriptions
+  h3 {
+  color: var(--yellow-clr);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.menu-container
+  .global-content-container
+  .content-container
+  .container-2
+  .menu-items-container
+  .menu-item
+  .item-descriptions
+  span {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
+}
+
+.menu-container
+  .global-content-container
+  .content-container
+  .container-2
+  .menu-items-container.reverse-menu-items
+  .menu-item {
+  flex-direction: row-reverse;
+}
+
+.menu-container
+  .global-content-container
+  .content-container
+  .container-2
+  .menu-items-container.reverse-menu-items
+  .menu-item
+  .item-descriptions {
+  text-align: right;
+}
+
