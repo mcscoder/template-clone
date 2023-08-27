@@ -47,6 +47,7 @@ nav {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 nav .nav-container {
@@ -400,6 +401,231 @@ nav .nav-container .nav-toggle-btn {
   transition: background-color 150ms ease-in-out;
 }
 
-.about-container .global-content-container .content-container .container-2 a:hover {
+.about-container
+  .global-content-container
+  .content-container
+  .container-2
+  a:hover {
   background-color: rgb(0, 167, 167);
+}
+
+.contact-container {
+  background-image: url("./assets/imgs/antique-cafe-bg-04.jpg");
+}
+
+.contact-container .global-content-container {
+  padding: 6rem 1rem 12rem;
+}
+
+.contact-container .global-content-container .content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container .global-content-container .content-container .container-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-1
+  h2 {
+  color: #006666;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.contact-container .global-content-container .content-container .container-1 p {
+  color: #000;
+  font-size: 1.175rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-1
+  .contact-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-1
+  .contact-information
+  span
+  a {
+  color: seagreen;
+  font-weight: 400;
+  transition: color 150ms ease-in-out;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-1
+  .contact-information
+  span
+  a:hover {
+  color: red;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-1
+  .map-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-1
+  .map-link
+  a {
+  font-size: 1.25rem;
+  font-weight: 300;
+  background-color: #006666;
+  border-radius: 0.5rem;
+  padding: 1.5rem 3rem;
+  transition: background-color 150ms ease-in-out;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-1
+  .map-link
+  a:hover {
+  background-color: rgb(0, 167, 167);
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-1
+  .map-link
+  a
+  span {
+  margin-left: 1rem;
+}
+
+.contact-container .global-content-container .content-container .container-2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  opacity: 0.9;
+  gap: 2rem;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-2
+  form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-2
+  form
+  .text-input {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-bottom-color: var(--gold-clr);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 300;
+  transition: all 150ms ease-in-out;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-2
+  form
+  .text-input:focus {
+  border-color: var(--gold-clr);
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-2
+  form
+  .text-input::placeholder {
+  color: #bebebe;
+  font-weight: 300;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-2
+  .send-btn {
+  display: flex;
+  justify-content: right;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-2
+  .send-btn
+  button {
+  font-weight: 300;
+  font-size: 1.175rem;
+  transition: color 150ms ease-in-out;
+}
+
+.contact-container
+  .global-content-container
+  .content-container
+  .container-2
+  .send-btn
+  button:hover {
+  color: rgb(245, 158, 11);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+}
+
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem 0;
+}
+
+footer .footer-container p {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
 }
